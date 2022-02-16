@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
+     <!-- Font Awosome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <!-- Bootstrap css link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- Tailwind css link -->
+     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Vanila css link -->
+     <link rel="stylesheet" href="style.css">
+
     <title>Monthly money calculation</title>
 </head>
 <body>
+    <header class=" ">
+        <h1  class=" text-teal-400 p-4 text-5xl text-center" >Monthly money calculation <i class="fa-solid fa-dollar-sign" style="font-size:40px;"></i></h1>
+    </header>
+    <main>
+        <section class="d-flex w-11/12 gap-5 mx-auto ">
+            <div class="left-side w-1/2	shadow-xl">
+               <img src="Images/wow.png" alt=""> 
+            </div>
+            <div class="right-side w-1/2 bg-[#f8f8f8] text-center py-3 text-blac shadow-xl">
+                <h1 class="text-3xl mb-3" >Income</h1>
+                <label  for="income">Income: </label>
+                <input type="number">
+                <h1 class="text-3xl mb-3">Expenses</h1>
+                <label for="food">Food:</label>
+                <input type="text"> <br><br>
+                <label for="rent">Rent:</label>
+                <input type="text"> <br><br>
+                <label for="cloth">Clothes:</label>
+                <input type="text"> <br><br>
+                <button class="btn btn-primary ">Calculate</button><br>
+                <h2 class="mt-2">Total Expenses: <span>5500</span></h2><br>
+                <h2>Total Balance: <span>4500</span></h2><br>
+                <label for="save">Save</label>
+                <input type="text">
+                <label for="%">%</label>
+                <input type="text" name="" id=""><br>
+                <h2 class="mt-2">Saving Amount: <span>2000</span></h2><br>
+                <h2>Remaining Balance: <span>2500</span> </h2>
+
+            </div>
+        </section>
+    </main>
     
     <script src="dom.js"></script>
 </body>

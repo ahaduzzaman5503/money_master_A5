@@ -1,1 +1,0 @@
-alert("Testing javascript file link")
