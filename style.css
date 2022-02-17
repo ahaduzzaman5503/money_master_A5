@@ -1,0 +1,22 @@
+@media (max-width:375px) {
+    .h1-custom{
+        color: rgb(129, 221, 23);
+    }
+    .for-two{
+        display: flex;
+        flex-direction:column;
+        font-size: 20px;
+    }
+    .right-side{
+        background-color: red;
+        width: 100%;
+    }
+    .left-side{
+        background-color: blue;
+        width: 100%;
+    }
+    .for-space{
+        margin-top: 8px;
+    }
+   
+}
