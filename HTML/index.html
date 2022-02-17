@@ -12,25 +12,29 @@
      <!-- Tailwind css link -->
      <script src="https://cdn.tailwindcss.com"></script>
     <!-- Vanila css link -->
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="/Css/responsive.css">
 
     <title>Monthly money calculation</title>
 </head>
 <body>
+  <!--================= Header start ========================-->
     <header class=" ">
-        <h1  class=" text-teal-400 p-4 text-5xl text-center h1-custom" >Monthly money calculation <i class="fa-solid fa-dollar-sign" style="font-size:40px;"></i></h1>
+        <h1 class=" text-teal-400 p-3 text-5xl text-center h1-custom">Monthly money calculation<i class="fa-solid fa-dollar-sign" style="font-size:40px;"></i></h1>
     </header>
     <main>
         <section class=" for-two d-flex w-11/12 gap-5 text-center mx-auto ">
+          <!--=============== Left side Image Start ====================-->
             <div class="left-side w-1/2	shadow-xl">
-               <img src="Images/wow.png" alt=""> 
+               <img src="/Images/wow.png" alt=""> 
             </div>
-            <div class="right-side w-1/2 bg-[#f8f8f8] px-8 text-blac shadow-xl">
+            <!-- ============= Income calculator Right side start ==================-->
+            <div class="right-side w-1/2 bg-[#f8f8f8] px-8 py-3 text-blac shadow-xl">
                 <h1 class="text-3xl mb-3 text-info" >Income</h1>
                 <div  class="d-flex justify-content-between mt-1">
                     <label class="text-2xl mt-2" >Income:   </label>
                     <input type="text" class="form-control w-4/5 mt-2" id="income-input" placeholder="Enter your Income">
                   </div>
+                  <!-- ================ Expenses start ======================= -->
                 <h1 class="text-3xl mb-3 text-info">Expenses</h1>
                
                 <div class="d-flex justify-content-between mt-1"> 
@@ -45,21 +49,23 @@
                     <label class="text-2xl mt-2" >Clothes:</label>
                     <input type="text" class="form-control w-4/5 mt-2" id="cloth-input" placeholder="Enter Clothes cost">
                   </div>
-                <button class="btn btn-lg btn-primary mt-3" id="clc-btn">Calculate</button><br>
+                  <!-- ============== Calculate Button ==============================  -->
+                <button onclick="incomeCalculate()" class="btn btn-lg btn-primary mt-3" id="clc-btn">Calculate</button><br>
                 
-                <h2 class="text-2xl mr-3" class="mt-1">Total Expenses: <span>5500</span></h2><br>
-                <h2 class="text-2xl mr-3">Total Balance: <span>4500</span></h2><br>
-                <label for="save">Save</label>
-                <input type="text">
+                <h2  class="text-2xl mr-3" class="mt-1">Total Expenses = <span id="total-expenses">00</span></h2><br>
+                <h2 class="text-2xl mr-3">Total Balance = <span id="totalBalance">00</span></h2><br>
+               
+                <!-- =============== Save Calculate ============================== -->
+                <label >Save</label>
+                <input id="save-parsant" type="text">
                 <label class="for-space" for="%">%</label>
-                <input type="text" name="" id=""><br>
-                <h2 class="text-2xl mr-3" class="mt-1 mb-2">Saving Amount: <span>2000</span></h2>
-                <h2 class="text-2xl mr-3">Remaining Balance: <span>2500</span> </h2>
-
+                <button onclick="savingCalculate()" class="btn btn-primary">Save</button>
+                <h2 class="text-2xl mr-3" class="mt-1 mb-2">Saving Amount = <span id="saving-amount" >00</span></h2>
+                <h2 class="text-2xl mr-3">Remaining Balance = <span id="remaining-balance">00</span> </h2>
             </div>
         </section>
     </main>
-    
-    <script src="dom.js"></script>
+    <!-- =================== Javascript file linked ====================== -->
+    <script src="/Javascript/dom.js"></script>
 </body>
 </html>

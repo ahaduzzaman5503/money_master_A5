@@ -1,6 +1,8 @@
+/* ========== Responsive Css Start */
 @media (max-width:375px) {
     .h1-custom{
         color: rgb(129, 221, 23);
+        font-size: 35px;
     }
     .for-two{
         display: flex;
@@ -8,15 +10,18 @@
         font-size: 20px;
     }
     .right-side{
-        background-color: red;
         width: 100%;
     }
     .left-side{
-        background-color: blue;
         width: 100%;
     }
     .for-space{
         margin-top: 8px;
     }
    
+}
+
+/* =========== Vanila Css start ==================== */
+body{
+    background-color: beige;
 }
